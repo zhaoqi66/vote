@@ -6,15 +6,6 @@
 
 <br>
 
-* 演示地址：[http://47.98.107.251:8089/](http://47.98.107.251:8089/)
-* 演示账号：admin &emsp;&emsp; 密码：admin 
-
-&emsp;静态页面项目地址：[EasyWebPage](https://gitee.com/whvse/EasyWebPage)，
-静态页面演示地址： [https://whvse.gitee.io/easywebpage/](https://whvse.gitee.io/easywebpage/login.html)。
-
-&emsp;前后端不分离版本项目地址：[easyweb-shiro](https://gitee.com/whvse/easyweb-shiro)，
-前后端分离版本上手难度大，可以用作学习项目，不分离版本可以开箱即用。
-
 
 ## 使用技术
 
@@ -140,51 +131,5 @@ controller、dao、model、service、service.impl等包，然后再resource/mapp
 - `druid` 的service扫描路径是 `com.wf.ew.*.service.*`
 - `mapper` 的扫描路径是 `com.wf.ew.*.dao` ，<br>
    位于 `common/config/MybatisPlusConfig.java`
-
-
-#### 前端快速上手
-&emsp;&emsp;前端页面详细开发文档：[https://whvse.gitee.io/easywebpage/docs/](https://whvse.gitee.io/easywebpage/docs/)
-
-
-## 项目截图
-
-![登录](https://ws1.sinaimg.cn/large/006a7GCKgy1fstc7m6zggj30vq0jn0vb.jpg) 
-
-![用户管理](https://ws1.sinaimg.cn/large/006a7GCKgy1fstc7ldhlbj315y0q6415.jpg)
-
-![角色管理](https://ws1.sinaimg.cn/large/006a7GCKgy1fstc7lye0jj30vq0i8gmv.jpg)
-
-![登录日志](https://ws1.sinaimg.cn/large/006a7GCKgy1fstc7logerj30vq0i8js2.jpg)
-
----
-
----
-
-## 相关学习资料
-
-- [Spring Boot 从入门到进阶系列教程](http://www.spring4all.com/article/246)
-
-- [Spring Security 从入门到进阶系列教程](http://www.spring4all.com/article/428)
-- [理解OAuth 2.0 - 阮一峰](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
-- [基于Token的WEB后台认证机制](https://www.cnblogs.com/xiekeli/p/5607107.html)
-- [Redis - 菜鸟教程](http://www.runoob.com/redis/redis-tutorial.html)
-- [RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
-- [使用Swagger2构建RESTful API](http://www.spring4all.com/article/251)
-- [Swagger2 - 注解详细说明](http://www.spring4all.com/article/251)
-- [SpringBoot - jar包 Linux后台启动](https://www.jianshu.com/p/5887e524de89)
-- [IDEA SpringBoot 热部署+html修改自动刷新](https://my.oschina.net/yejunxi/blog/845752)
-- [SpringBoot 多模块项目实践（附打包方法）](https://www.jianshu.com/p/59ceea4f029d)
-- [markdown基本语法](https://www.jianshu.com/p/191d1e21f7ed)
-
- :smirk: 学如逆水行舟，不进则退~~~
-
----
-
-
-## 联系方式
-### 欢迎加入“前后端分离技术交流群”
-相互学习，共同进步！
-
-![群二维码](https://ws1.sinaimg.cn/large/006a7GCKgy1fstbxycj1xj305k07m75h.jpg)
 
 
