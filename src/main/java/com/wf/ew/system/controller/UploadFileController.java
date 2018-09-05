@@ -43,15 +43,8 @@ public class UploadFileController {
             @ApiResponse(code =500,message = "上传失败")
     })
     @ApiImplicitParam(name = "file",value = "新增图片")
-    public JsonResult uploadOnePicture(MultipartFile file, HttpServletRequest request) {
+    public JsonResult uploadOnePicture(MultipartFile file) {
         logger.info("============>单图片上传 file={}", file);
-        if (request.getCharacterEncoding() == null) {
-            try {
-                request.setCharacterEncoding("UTF-8");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-            }
-        }
         String uploadFile = uploadFileService.uploadFile(file);
         return JsonResult.ok(uploadFile);
     }

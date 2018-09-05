@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.UUID;
 
 /**
  * UploadFileServiceImpl
@@ -28,14 +29,18 @@ public class UploadFileServiceImpl implements UploadFileService {
         try {
             if (null != file) {
                 String filename = file.getOriginalFilename();
-                if (!"".equals(filename.trim())) {
-                    File newFile = new File(filename);
+                String newFileName= UUID.randomUUID().toString()+"."+filename.substring(filename.lastIndexOf(".")+1);
+                if (!"".equals(newFileName.trim())) {
+                    File newFile = new File(newFileName);
                     FileOutputStream os = new FileOutputStream(newFile);
                     os.write(file.getBytes());
                     os.close();
                     file.transferTo(newFile);
                     //上传到OSS
                     uploadUrl = AliyunOSSUtil.upload(newFile);
+                    if (newFile.exists()) {
+                        newFile.delete();
+                    }
 
                 }
 
